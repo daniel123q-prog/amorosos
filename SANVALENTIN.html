@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrega Especial 💝</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 30px;
+}
+
+p {
+    max-width: 900px;
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+button {
+    margin-top: 35px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #ff4f7a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #ffe6ec;
+}
+
+img {
+    max-width: 260px;
+    margin: 25px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    animation: fall 6s linear infinite;
+}
+
+@keyframes fall {
+    0% {transform: translateY(-10%); opacity: 1;}
+    100% {transform: translateY(110vh); opacity: 0;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<!-- SECCIÓN 1 -->
+<section id="section1">
+    <h1>📦 Entrega Especial</h1>
+    <p><strong>DE:</strong> Daniel 💌</p>
+    <p><strong>PARA:</strong> Marjorie 💖</p>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/595/595067.png">
+
+    <p>
+        ⚠️ Advertencia importante:  
+        El contenido que estás a punto de leer no fue escrito a la ligera.  
+        Aquí hay sentimientos reales, pensamientos sinceros y palabras que nacen
+        desde un lugar muy honesto del corazón.
+    </p>
+    <p>
+        No es una carta cualquiera, es una pausa en el tiempo para decirte
+        cosas que a veces no se dicen en voz alta, pero que se sienten todos los días.
+    </p>
+
+    <button onclick="nextSection(2)">💗 Deseo continuar</button>
+</section>
+
+<!-- SECCIÓN 2 -->
+<section id="section2" class="hidden">
+    <h2>Este mensaje es para ti 💌</h2>
+    <p>
+        Mi Amor, si llegaste hasta aquí, quiero que sepas que cada palabra
+        fue pensada con calma, con paciencia y con una intención muy clara:
+        que sepas lo importante que eres.
+    </p>
+    <p>
+        Desde que apareciste en mi vida, muchas cosas comenzaron a tener
+        un sentido distinto. Cambió la forma en la que veo mis días,
+        cambió la manera en la que enfrento lo cotidiano y cambió incluso
+        la forma en la que sonrío sin darme cuenta.
+    </p>
+    <p>
+        No escribo esto para impresionar ni para exagerar,
+        lo escribo porque hay sentimientos que merecen ser expresados,
+        y tú mereces saber lo que provocas en mí.
+    </p>
+
+    <button onclick="nextSection(3)">✨ Seguir leyendo</button>
+</section>
+
+<!-- SECCIÓN 3 -->
+<section id="section3" class="hidden">
+    <h2>Si esto fuera un testamento 📝</h2>
+    <p>
+        Si este mensaje fuera un testamento emocional,
+        aquí dejaría escrito todo aquello que estoy dispuesto a ofrecer.
+    </p>
+    <p>
+        Te dejo mi tiempo cuando lo necesites,  
+        mis palabras cuando el silencio pese  
+        y mi atención incluso en los días donde todo parece ir rápido.
+    </p>
+    <p>
+        Te dejo mis sonrisas para los días grises,  
+        mis brazos como refugio seguro  
+        y mi disposición a escuchar incluso lo que no se dice con palabras.
+    </p>
+    <p>
+        Porque quererte no es solo decirlo,
+        es demostrarlo en los pequeños detalles.
+    </p>
+
+    <button onclick="nextSection(4)">💞 Continuar</button>
+</section>
+
+<!-- SECCIÓN 4 -->
+<section id="section4" class="hidden">
+    <h2>Las pequeñas cosas 💕</h2>
+    <p>
+        Me gustan las pequeñas cosas de ti,
+        esas que tal vez no notas pero que para mí lo significan todo.
+        Tu manera de expresarte, tu forma de reír,
+        y cómo sin proponértelo logras cambiar mi estado de ánimo.
+    </p>
+    <p>
+        Me gusta cómo tu presencia se siente,
+        cómo haces que los momentos simples se vuelvan especiales
+        y cómo poco a poco te convertiste en alguien
+        que ocupa un lugar importante en mi vida.
+    </p>
+
+    <button onclick="nextSection(5)">💖 Seguir</button>
+</section>
+
+<!-- SECCIÓN 5 -->
+<section id="section5" class="hidden">
+    <h2>Lo que siento 💗</h2>
+    <p>
+        No prometo perfección, porque nadie lo es,
+        pero sí prometo honestidad, respeto y cuidado.
+    </p>
+    <p>
+        Prometo estar presente en los días buenos
+        y no desaparecer en los complicados.
+        Prometo valorar lo que eres
+        y cuidar lo que construimos.
+    </p>
+    <p>
+        Porque cuando alguien importa,
+        se nota en las acciones,
+        y tú, Marjorie, importas más de lo que imaginas.
+    </p>
+
+    <button onclick="nextSection(6)">💘 Un poco más</button>
+</section>
+
+<!-- SECCIÓN 6 -->
+<section id="section6" class="hidden">
+    <h2>Antes de la pregunta final 💭</h2>
+    <p>
+        No escribí todo esto esperando una respuesta obligada.
+        Lo escribí porque sentí que debía hacerlo,
+        porque a veces el corazón necesita hablar sin interrupciones.
+    </p>
+    <p>
+        Pase lo que pase después,
+        estas palabras ya son reales
+        y este sentimiento también.
+    </p>
+
+    <button onclick="nextSection(7)">💖 Continuar</button>
+</section>
+
+<!-- SECCIÓN 7 -->
+<section id="section7" class="hidden">
+    <h1>💝 Mi Estrellita 💝</h1>
+    <p>
+        Después de todo lo que leíste,
+        después de abrir mi corazón de esta forma,
+        solo queda una pregunta que resume todo lo anterior.
+    </p>
+
+    <h2>¿Quieres ser mi San Valentín? 💘</h2>
+
+    <button onclick="accept()">💗 Sí, quiero 💗</button>
+    <button onclick="moveButton(this)">😳 No</button>
+</section>
+
+<!-- SECCIÓN 8 -->
+<section id="section8" class="hidden">
+    <h1>💖 Gracias por leer 💖</h1>
+    <p>
+        Gracias por tomarte el tiempo,
+        por leer con calma
+        y por permitir que estas palabras lleguen a ti.
+    </p>
+    <p>
+        Con cariño,  
+        Tu Novio 💌
+    </p>
+</section>
+
+<script>
+function nextSection(num) {
+    document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+    document.getElementById('section' + num).classList.remove('hidden');
+}
+
+function accept() {
+    nextSection(8);
+}
+
+function moveButton(btn) {
+    btn.style.position = "absolute";
+    btn.style.top = Math.random() * 80 + "%";
+    btn.style.left = Math.random() * 80 + "%";
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 20 + 20 + "px";
+    document.getElementById("hearts").appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+}
+
+setInterval(createHeart, 400);
+</script>
+
+</body>
+</html>
+
